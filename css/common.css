@@ -31,16 +31,6 @@
 	font-size: 0;
 	color: transparent
 }
-#header {
-	/* position: fixed;
-	top:-100%;
-	width: 100%;
-	height: 100%;
-	border: 1px solid transparent;
-	background-color: #b4dbbf;
-	box-sizing: border-box;
-	opacity: 0; */
-}
 #btn_menu{
 	position: fixed;
 	top:65px;
@@ -131,7 +121,18 @@
 	border: 1px solid transparent;
 	background-color: #b4dbbf;
 	box-sizing: border-box;
+	visibility: hidden;
 	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#gnb.open{
+	top:0%;
+	opacity: 1;
+	visibility: visible;
 }
 #gnb ul {
 	display:inline-block;
